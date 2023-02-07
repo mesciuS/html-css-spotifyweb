@@ -81,3 +81,10 @@ main {
     width: 15%;
 }
 /* /stilizzazione nav sinistra */
+
+/* stilizzazione nav bottom */
+
+.bottom-bar {
+    display: flex;
+    justify-content: space-between;
+}
