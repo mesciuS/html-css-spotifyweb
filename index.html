@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Web</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -14,11 +16,91 @@
 
     <main>
 
-       <nav class="bar side-bar"></nav>
-       <nav class="bar bottom-bar"></nav>
-       <div class="bar top-bar"></div>
+       <nav class="bar side-bar">
+
+            <div>
+                <img src="img/logo.svg" alt="logo" class="logo">
+            </div>
+
+            <div class="navigation">
+                <div class="row">
+                    <div class="row-icon">
+                        <img src="img/home.svg" alt="home">
+                    </div>
+                    <div class="row-text">
+                        Home
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="row-icon">
+                        <img src="img/search.svg" alt="search">
+                    </div>
+                    <div class="row-text">
+                        Cerca
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="row-icon">
+                        <img src="img/libreria.svg" alt="library">
+                    </div>
+                    <div class="row-text">
+                        Libreria
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h4>Playlist</h4>
+            </div>
+
+            <div class="row">
+                <div class="row-icon">
+                    <i class="fa-regular fa-square-plus"></i>
+                </div>
+                <div class="row-text">
+                    Crea playlist
+                </div>
+            </div>
+
+            <div class="playlist">
+                <!-- classe temporanea e numerop temporaneo -->
+            </div>
+
+            <div class="row">
+                <div class="row-icon">
+                    <img src="img/download.svg" alt="dwnld">
+                </div>
+                <div class="row-text">
+                    Installa app
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="row-icon">
+                    <img src="img/profile.svg" alt="user">
+                </div>
+                <div class="row-text">
+                    John Doe
+                </div>
+            </div>
+       </nav>
+
+       <div class="bar top-bar">
+            <button>
+                EFFETTUA L'UPGRADE
+            </button>
+       </div>
+
+       <nav class="bar bottom-bar">
+            <div></div>
+            <div></div>
+            <div></div>
+       </nav>
+
        <div class="container"></div>
-       
+
     </main>
 
     
