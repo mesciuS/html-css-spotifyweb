@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: sans-serif;
+}
+
 main {
     display: flex;
     
@@ -21,6 +25,9 @@ main {
     position: absolute;
     left: 200px;
     top: 80px;
+
+    padding-left: 30px;
+    padding-right: 30px;
 
     overflow-y: auto;
 
@@ -95,3 +102,50 @@ main {
 
 /* stilizzazione container */
 
+.links {
+    padding-top: 20px;
+    padding-bottom: 40px;
+
+    font-size: .8em;
+    font-weight: bold;
+    color: #6f7177;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    list-style-type: none;
+}
+
+h2 {
+    color: white;
+}
+
+.container p {
+    padding-top: 10px;
+
+    font-size: .9em;
+    color: #6f7177;
+}
+
+.container-row {
+    display: flex;
+
+    gap: 20px;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.square {
+    border: 1px solid rebeccapurple;
+
+    height: 200px;
+    width: 200px;
+}
+
+.sqaure-img {
+    
+}
