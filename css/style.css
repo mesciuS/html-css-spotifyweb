@@ -22,6 +22,8 @@ main {
     left: 200px;
     top: 80px;
 
+    overflow-y: auto;
+
     background-color: #141922;
 }
 
@@ -88,3 +90,8 @@ main {
     display: flex;
     justify-content: space-between;
 }
+
+/* /stilizzazione nav bottom */
+
+/* stilizzazione container */
+
