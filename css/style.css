@@ -9,143 +9,178 @@ body {
 }
 
 main {
-    display: flex;
-    
-    position: relative;
-
     width: 100vw;
     height: 100vh;
-}
-
-/* stilizzazione base macro aree */
-.container {
-    width: calc(100% - 200px);
-    height: calc(100% - 180px);
-
-    position: absolute;
-    left: 200px;
-    top: 80px;
-
-    padding-left: 30px;
-    padding-right: 30px;
-
-    overflow-y: auto;
-
-    background-color: #141922;
-}
-
-.bottom-bar {
-    width: 100vw;
-    height: 100px;
-
-    position: absolute;
-    bottom: 0px;
-
-    background-color: #282828;
-}
-
-.side-bar {
-    height: calc(100% - 100px);
-    width: 200px;
 
     display: flex;
     flex-direction: column;
-
-    position: absolute;
-    top: 0px;
-    left: 0px;
-
-    padding-left: 20px;
-    padding-top: 20px;
-
-    background-color: #000000;
-    color: #797979;
 }
 
-.top-bar {
-    width: calc(100% - 200px);
-    height: 80px;
+.top-container {
+    display: flex;
 
-    position: absolute;
-    top: 0px;
-    right: 0px;
+    max-width: 100%;
+    height: calc(100% - 90px);
+}
 
+#side-bar {
+    width: 230px;
+    height: 100%;
+
+    background-color: #000000;
+}
+
+#main-container {
+    width: calc(100% - 230px);
+    height: 100%;
+}
+
+#main-container .top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    width: 100%;
+    height: 90px;
+
+    padding-right: 10px;
 
     background-color: #080b12;
 }
-/* /stilizzazione base macro aree */
 
-/* stilizzazione nav sinistra */
+#main-container .inner {
+    width: 100%;
+    height: 100%;
 
-.logo {
-    width: 80%;
+    background-color: #141922;
+}
+/* struttura centrale no stile */
+
+button {
+    padding: 10px 20px;
+    
+    color: white;
+    font-weight: bold;
+
+    border: 1px solid white;
+    border-radius: 18px;
+
+    background-color: #080b12;
 }
 
-.row {
-    display: flex;
-    padding-bottom: 10px;
+
+
+
+
+
+
+
+/* FOOTER */
+footer {
+    max-width: 100%;
+    height: 90px;
+
+    color: white;
+    background-color: #282828;
 }
 
-.row img {
-    width: 15%;
-}
-/* /stilizzazione nav sinistra */
+.footer-container {
+    height: 100%;
 
-/* stilizzazione nav bottom */
-
-.bottom-bar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-/* /stilizzazione nav bottom */
+.controls-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 10px;
+}
 
-/* stilizzazione container */
+.footer-img-container {
+    width: 50px;
+    height: 50px;
+}
 
-.links {
-    padding-top: 20px;
-    padding-bottom: 40px;
+.footer-img {
+    max-width: 100%;
+}
 
+.bottom-bar-text .white-text {
     font-size: .8em;
     font-weight: bold;
-    color: #6f7177;
 }
 
-ul {
+.bottom-bar-text .grey-text {
+    font-size: .6em;
+    font-weight: bold;
+    color: #7f8286;
+}
+
+.controls-center {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.controls-center-top {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    padding-bottom: 20px;
+}
+
+.controls-center-bottom {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    font-size: .6em;
+}
+
+.controls-center-bottom .play-bar-outer {
+    height: 3px;
+    width: 400px;
+
+    border-radius: 2px;
+
+    background-color: #5a5a5a;
+}
+
+.controls-center-bottom .play-bar-inner {
+    height: 3px;
+    width: 20%;
+
+    border-radius: 2px;
+
+    background-color: #fdfdfd;
+}
+
+.controls-left {
+    display: flex;
+    align-items: center;
     gap: 20px;
 
-    list-style-type: none;
+    padding-right: 10px;
 }
 
-h2 {
-    color: white;
+.volume-bar-outer {
+    height: 3px;
+    width: 100px;
+
+    border-radius: 2px;
+
+    background-color: #5a5a5a;
 }
 
-.container p {
-    padding-top: 10px;
+.volume-bar-inner {
+    height: 3px;
+    width: 20%;
 
-    font-size: .9em;
-    color: #6f7177;
-}
+    border-radius: 2px;
 
-.container-row {
-    display: flex;
-
-    gap: 20px;
-
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-.square {
-    border: 1px solid rebeccapurple;
-
-    height: 200px;
-    width: 200px;
-}
-
-.sqaure-img {
-    
+    background-color: #fdfdfd;
 }
