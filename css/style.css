@@ -24,8 +24,16 @@ main {
 }
 
 #side-bar {
+    display: flex;
+    flex-direction: column;
+
     width: 230px;
     height: 100%;
+
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
 
     background-color: #000000;
 }
@@ -52,41 +60,101 @@ main {
     width: 100%;
     height: 100%;
 
+    padding-right: 20px;
+    padding-left: 20px;
+
+    overflow-y: auto;
+
     background-color: #141922;
 }
 /* struttura centrale no stile */
 
-button {
-    padding: 10px 20px;
-    
-    color: white;
-    font-weight: bold;
+/* SIDE BAR */
 
-    border: 1px solid white;
-    border-radius: 18px;
-
-    background-color: #080b12;
+.logo {
+    width: 80%;
+    padding-bottom: 30px;
+}
+.row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: grey;
+    padding-bottom: 10px;
 }
 
+.row-icon {
+    width: 15%;
+}
 
+#side-bar h4 {
+    color: white;
 
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
 
+#side-bar hr {
+    color: grey;
+    margin-bottom: 10px;
+}
 
+.playlist {
+    color: gray;
+    padding-top: 20px;
+}
 
+/* CONTENITORE CENTRALE */
 
+.links {
+    display: flex;
+    justify-content: center;
+
+    padding-top: 20px;
+    padding-bottom: 40px;
+
+    font-size: .8em;
+    font-weight: bold;
+    color: #7f8286;
+
+}
+
+.links ul {
+    display: flex;
+    justify-content: center;
+
+    gap: 30px;
+
+    list-style-type: none;
+}
+
+.container-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.square {
+    width: calc(100% / 6);
+}
+
+.sqaure-img img {
+    max-width: 100%;
+}
+/* / CONTENITORE CENTRALE */
 
 /* FOOTER */
 footer {
     max-width: 100%;
     height: 90px;
-
+    
     color: white;
     background-color: #282828;
 }
 
 .footer-container {
     height: 100%;
-
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -129,7 +197,7 @@ footer {
     display: flex;
     align-items: center;
     gap: 30px;
-
+    
     padding-bottom: 20px;
 }
 
@@ -137,25 +205,25 @@ footer {
     display: flex;
     align-items: center;
     gap: 50px;
-
+    
     font-size: .6em;
 }
 
 .controls-center-bottom .play-bar-outer {
     height: 3px;
     width: 400px;
-
+    
     border-radius: 2px;
-
+    
     background-color: #5a5a5a;
 }
 
 .controls-center-bottom .play-bar-inner {
     height: 3px;
     width: 20%;
-
+    
     border-radius: 2px;
-
+    
     background-color: #fdfdfd;
 }
 
@@ -163,24 +231,37 @@ footer {
     display: flex;
     align-items: center;
     gap: 20px;
-
+    
     padding-right: 10px;
 }
 
 .volume-bar-outer {
     height: 3px;
     width: 100px;
-
+    
     border-radius: 2px;
-
+    
     background-color: #5a5a5a;
 }
 
 .volume-bar-inner {
     height: 3px;
     width: 20%;
-
+    
     border-radius: 2px;
-
+    
     background-color: #fdfdfd;
+}
+
+/* button top bar */
+button {
+    padding: 10px 20px;
+    
+    color: white;
+    font-weight: bold;
+
+    border: 1px solid white;
+    border-radius: 18px;
+
+    background-color: #080b12;
 }
