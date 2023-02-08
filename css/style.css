@@ -6,6 +6,7 @@
 
 body {
     font-family: sans-serif;
+    color: white;
 }
 
 main {
@@ -26,6 +27,7 @@ main {
 #side-bar {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 
     width: 230px;
     height: 100%;
@@ -111,6 +113,10 @@ footer {
     color: gray;
     padding-top: 20px;
 }
+
+.row-text-user {
+    color: white;
+}
 /* / SIDER BAR */
 
 /* CONTENITORE CENTRALE */
@@ -124,8 +130,6 @@ footer {
 
     font-size: .8em;
     font-weight: bold;
-    color: #7f8286;
-
 }
 
 .links ul {
@@ -135,6 +139,10 @@ footer {
     gap: 30px;
 
     list-style-type: none;
+}
+
+li {
+    opacity: .3;
 }
 
 .row-one {
@@ -256,7 +264,6 @@ footer {
     max-width: 530px;
 
     padding: 10px 0;
-
 }
 
 .controls-center-top {
@@ -360,4 +367,44 @@ button {
     background-color: #3f3f3f;  
     border-radius: 20px; 
     border: 1px solid black; 
+}
+
+/* hover */
+
+li:hover {
+    transform: scale(110%);
+    opacity: 1;
+}
+
+button:hover {
+    transform: scale(110%);
+}
+
+.row-text:hover {
+    color: white
+}
+
+.playlist:hover {
+    color: white;
+}
+
+.row-text-user:hover {
+    text-decoration: underline;
+}
+
+.grey-text:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.bottom-bar-buttons .fa-regular:hover {
+    opacity: 1;
+}
+
+.controls-center-top .fa-regular:hover {
+    transform: scale(120%);
+}
+
+.play-bar-inner:hover, .volume-bar-inner:hover {
+    background-color: lawngreen;
 }
