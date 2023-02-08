@@ -19,7 +19,7 @@ main {
 .top-container {
     display: flex;
 
-    max-width: 100%;
+    width: 100%;
     height: calc(100% - 90px);
 }
 
@@ -138,7 +138,7 @@ main {
     width: calc(100% / 6);
 }
 
-.sqaure-img img {
+.square-img img {
     max-width: 100%;
 }
 /* / CONTENITORE CENTRALE */
