@@ -312,3 +312,18 @@ button {
 
     background-color: #080b12;
 }
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 12px;               
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3f3f3f;  
+    border-radius: 20px; 
+    border: 1px solid black; 
+}
