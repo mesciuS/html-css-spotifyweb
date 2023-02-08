@@ -425,5 +425,9 @@ button:hover {
 
 .square-img:hover {
     opacity: .5;
+    display: block;
 }
 
+.square-img:hover .fa-regular {
+    display:block 
+  }
