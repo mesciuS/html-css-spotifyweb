@@ -87,6 +87,13 @@ footer {
     width: 80%;
     padding-bottom: 30px;
 }
+
+.logo-small {
+    padding-bottom: 30px;
+
+    display: none;
+}
+
 .row {
     display: flex;
     align-items: center;
@@ -450,8 +457,47 @@ button:hover {
     
     .square {
         width: calc(100% / 2 - (15px / 2 * 1));
-
     }
 
-    
+    #main-container {
+        width: calc(100% - 70px);
+    }
+
+    #side-bar {
+        width: 70px;
+    }
+
+    #side-bar .logo {
+        display: none;
+    }
+
+    #side-bar .logo-small {
+        display: block;
+        width: 100%;
+    }
+
+    #side-bar .row-icon {
+        width: 100%;
+    }
+
+    #side-bar .row-text {
+        display: none;
+    }
+
+    #side-bar .row-text-user {
+        display: none;
+    }
+
+    #side-bar h4 {
+        display: none;
+    }
+
+    #side-bar .playlist {
+        display: none;
+    }
+
+    #side-bar hr {
+        display: none;
+    }
+
 }
