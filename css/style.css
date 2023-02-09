@@ -137,6 +137,7 @@ footer {
 .links ul {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 
     gap: 30px;
 
@@ -149,8 +150,9 @@ li {
 
 .row-one {
     display: flex;
-    justify-content: space-between;
-    gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .row-two, .row-three {
@@ -159,7 +161,10 @@ li {
 }
 
 .square {
-    width: calc(100% / 6);
+    display: flex;
+    flex-direction: column;
+
+    width: calc(100% / 6 - (15px / 6 * 5));
 
     padding-bottom: 30px;
 }
@@ -425,9 +430,28 @@ button:hover {
 
 .square-img:hover {
     opacity: .5;
-    display: block;
 }
 
 .square-img:hover .fa-regular {
-    display:block 
-  }
+    display: block; 
+}
+
+/* media query */
+
+@media screen and (max-width: 992px) {
+
+    .square {
+        width: calc(100% / 4 - (15px / 4 * 3));
+
+    }
+}
+
+@media screen and (max-width: 576px) {
+    
+    .square {
+        width: calc(100% / 2 - (15px / 2 * 1));
+
+    }
+
+    
+}
